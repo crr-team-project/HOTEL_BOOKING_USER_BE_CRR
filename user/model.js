@@ -8,17 +8,7 @@ const userSchema = new mongoose.Schema(
   password: { type: String, required: true },
   phone: { type: String },
   address: { type: String },
-  role: { type: String, enum: ["user", "owner", "admin"], default: "user" },
-  businessInfo: {
-   businessName: { type: String },
-   businessNumber: { type: String },
-   bankAccount: { type: String },
-  },
-  businessStatus: {
-   type: String,
-   enum: ["none", "pending", "approved", "rejected"],
-   default: "none",
-  },
+  role: { type: String, enum: ["user",  "admin"], default: "user" },
  },
  {
   timestamps: true,
