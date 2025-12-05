@@ -1,4 +1,3 @@
-import { custom } from "joi";
 import mongoose from "mongoose";
 
 const { Schema } = mongoose;
@@ -21,10 +20,10 @@ const hotelSchema = new Schema(
   ratingCount: { type: Number, default: 0 },
   owner: { type: Schema.Types.ObjectId, ref: "User", required: true },
   freebies: {
-    breakfast: { type: Boolean, default: false },
-    airportPickup: { type: Boolean, default: false },
-    wifi: { type: Boolean, default: false },    
-    customerSupport: { type: Boolean, default: false },
+   breakfast: { type: Boolean, default: false },
+   airportPickup: { type: Boolean, default: false },
+   wifi: { type: Boolean, default: false },
+   customerSupport: { type: Boolean, default: false },
   },
   status: {
    type: String,
