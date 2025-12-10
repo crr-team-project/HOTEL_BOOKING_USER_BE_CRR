@@ -4,7 +4,7 @@ import { Hotel } from "../hotel/model.js";
 export const listFavorites = async (userId) => {
   return Favorite.find({ userId }).populate(
     "hotelId",
-    "_id name city address location images ratingAverage ratingCount basePrice tags"
+    "name city address images ratingAverage ratingCount"
   );
 };
 

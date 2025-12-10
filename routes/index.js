@@ -9,7 +9,6 @@ import roomRoutes from "../room/route.js";
 import favoriteRoutes from "../favorite/route.js";
 import couponRoutes from "../coupon/route.js";
 import paymentMethodRoutes from "../paymentMethod/route.js";
-import tourRoutes from "../tour/route.js";
 
 const router = Router();
 
@@ -23,6 +22,5 @@ router.use("/rooms", roomRoutes);
 router.use("/favorites", favoriteRoutes);
 router.use("/coupons", couponRoutes);
 router.use("/payment-methods", paymentMethodRoutes);
-router.use("/tours", tourRoutes);
 
 export default router;
